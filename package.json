@@ -1,0 +1,27 @@
+{
+  "name": "mnist-tensorflow-project",
+  "version": "1.0.0",
+  "description": "Simple TensorFlow MNIST project with ANN model",
+  "main": "train.py",
+  "scripts": {
+    "start": "python train.py --config config.json",
+    "train": "python train.py --config config.json",
+    "lint": "eslint .",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "tensorflow",
+    "mnist",
+    "machine-learning",
+    "deep-learning",
+    "devops"
+  ],
+  "author": "Osman",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^8.56.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}
