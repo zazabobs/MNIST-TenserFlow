@@ -1,0 +1,30 @@
+version: "1.0"
+
+environment:
+  python: "3.9"
+  tensorflow: "2.15.0"
+  dependencies:
+    - matplotlib
+    - numpy
+    - pandas
+
+training:
+  dataset: "MNIST"
+  normalize: true
+  shuffle: true
+  validation_split: 0.1
+
+model:
+  type: DenseNN
+  layers:
+    - units: 128
+      activation: relu
+    - dropout: 0.2
+    - units: 10
+      activation: softmax
+
+logging:
+  save_model: true
+  model_path: "models/mnist_model.h5"
+  tensorboard: true
+  log_dir: "logs/fit/"
